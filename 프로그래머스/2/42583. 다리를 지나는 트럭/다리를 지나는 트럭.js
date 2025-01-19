@@ -7,6 +7,7 @@ function solution(bridge_length, weight, truck_weights) {
     time += 1;
     current_weight -= bridge.shift();
 
+    // 주석 추가
     if (truck_weights.length) {
       if (current_weight + truck_weights[0] <= weight) {
         const next_truck = truck_weights.shift();
